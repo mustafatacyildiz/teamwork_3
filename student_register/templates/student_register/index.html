@@ -1,0 +1,12 @@
+{% extends "student_register/base.html" %} 
+
+{% block container %}
+<h1>Home Page</h1>
+<h3>Student Register App</h3>
+<br>
+<ul>
+    {% for student in students %}
+    <li>{{student}}</li>
+    {% endfor %}
+</ul>
+{% endblock container %}
